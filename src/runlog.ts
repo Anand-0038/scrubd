@@ -3,7 +3,7 @@
 
 import { appendFileSync, writeFileSync } from "node:fs";
 
-const RUNLOG_PATH = "runlog.csv";
+let RUNLOG_PATH = "runlog.csv";
 let headerWritten = false;
 
 export interface RunLogEntry {
@@ -19,6 +19,7 @@ export interface RunLogEntry {
 }
 
 export function initRunLog(path = RUNLOG_PATH): void {
+  RUNLOG_PATH = path;
   if (!headerWritten) {
     writeFileSync(
       path,

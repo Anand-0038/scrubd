@@ -5,6 +5,7 @@ data/gold/
 scrubd-out/
 tmp/
 *.vault.json
-runlog.csv
 hack
 digest.txt
+.DS_Store
+*.log
