@@ -1,0 +1,11 @@
+REFERRAL LETTER
+
+Re: {{NAME_TITLED}}
+{{DATE_OBF}}
+Referring provider notes MRN {{MRN}}.
+
+Patient resides near ZIP {{GEO}}.
+License {{LICENSE}} verified.
+Alternate ID {{OTHER_ID}} on chart.
+
+Please contact {{PHONE}} with questions.

@@ -1,0 +1,9 @@
+NURSING NOTE
+
+Patient {{NAME_TITLED}} ambulating well.
+Birth date {{DATE}}. Record {{MRN}}.
+
+Family member {{NAME_CONTEXT}} updated at {{PHONE}}.
+Patient portal: {{URL}}
+
+Account reference {{ACCOUNT}}.

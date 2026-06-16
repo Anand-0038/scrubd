@@ -1,0 +1,14 @@
+DISCHARGE SUMMARY
+
+Patient: {{NAME_TITLED}}
+Date of Birth: {{DATE}}
+MRN: {{MRN}}
+Address ZIP: {{GEO}}
+
+Primary diagnosis: hypertension. Discussed plan with {{NAME_CONTEXT}} before discharge.
+Contact: {{PHONE}} | {{EMAIL}}
+SSN on file: {{SSN}}
+Insurance: {{HEALTH_PLAN}}
+
+Follow-up portal: {{URL}}
+Recorded from IP: {{IP}}

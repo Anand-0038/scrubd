@@ -1,0 +1,8 @@
+OPERATIVE NOTE
+
+Surgeon: {{NAME_TITLED}}
+Patient MRN {{MRN}}, DOB {{DATE}}.
+Device serial {{DEVICE}} used intraoperatively.
+
+Post-op discussion with {{NAME_CONTEXT}}.
+License {{LICENSE}} on file.

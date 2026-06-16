@@ -1,0 +1,5 @@
+{
+  "localOnly": true,
+  "zeroRemoteApis": true,
+  "description": "Scrubd runs fully offline. All inference via local MedPsy GGUF through @qvac/sdk. No outbound network calls at runtime."
+}

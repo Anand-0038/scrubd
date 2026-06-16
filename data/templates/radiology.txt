@@ -1,0 +1,10 @@
+RADIOLOGY REPORT
+
+Exam for {{NAME_TITLED}} on {{DATE}}.
+MRN: {{MRN}}
+
+Clinical indication: chest pain.
+Findings discussed with {{NAME_OBF}}.
+
+Report sent to {{EMAIL}}.
+Portal link: {{URL}}

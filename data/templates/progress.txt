@@ -1,0 +1,12 @@
+PROGRESS NOTE
+
+{{NAME_TITLED}} seen today for follow-up.
+DOB {{DATE}}. MRN {{MRN}}.
+Vitals stable. Patient is 45 years old, BP 120/80 — not PHI.
+
+Spoke with {{NAME_CONTEXT}} regarding medication adherence.
+Device {{DEVICE}} readings reviewed.
+Account {{ACCOUNT}} billed.
+
+Contact fax available on request.
+Email: {{EMAIL}}

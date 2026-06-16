@@ -1,0 +1,31 @@
+{
+  "name": "scrubd",
+  "version": "0.1.0",
+  "description": "Fully offline clinical-note PHI de-identifier for QVAC Hackathon",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22.17",
+    "npm": ">=10.9"
+  },
+  "bin": {
+    "scrubd": "dist/src/cli.js",
+    "scrubd-gen": "dist/scripts/gen-gold.js",
+    "scrubd-relink": "dist/scripts/relink.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/cli.js",
+    "gen-gold": "node dist/scripts/gen-gold.js",
+    "verify-offline": "node dist/scripts/verify-offline.js",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@qvac/sdk": "^0.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+models/*.gguf
+data/gold/
+scrubd-out/
+tmp/
+*.vault.json
+runlog.csv
+hack
+digest.txt

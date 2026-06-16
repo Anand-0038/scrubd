@@ -1,0 +1,11 @@
+LAB REPORT
+
+Specimen for {{NAME_TITLED}}
+Collection date {{DATE}}
+MRN {{MRN}}
+
+Results faxed per policy.
+Contact {{EMAIL}} for questions.
+Member ID {{HEALTH_PLAN}}
+
+Other identifier {{OTHER_ID}} linked to order.

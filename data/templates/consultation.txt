@@ -1,0 +1,10 @@
+CONSULTATION NOTE
+
+Consult requested for {{NAME_TITLED}}.
+DOB: {{DATE}} | MRN {{MRN}} | ZIP {{GEO}}
+
+History obtained from {{NAME_CONTEXT}} at bedside.
+SSN verified: {{SSN}}
+Health plan: {{HEALTH_PLAN}}
+
+Signed electronically from {{IP}}.
