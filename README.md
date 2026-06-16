@@ -17,18 +17,7 @@ npx scrubd ./tmp/gold/notes --eval --stage2 --out ./tmp/out
 
 ## Architecture
 
-```mermaid
-flowchart TD
-  A[Notes .txt] --> B[Regex scan 18 HIPAA]
-  B --> C[MedPsy recovery @qvac/sdk]
-  C --> D[Merge spans]
-  D --> E[HIPS surrogates + encrypted vault]
-  E --> F[De-identified note]
-  D --> G[Eval P/R/F1 vs gold]
-  F --> H[Stage-2 extract]
-  G --> I[deid-report.md]
-  H --> I
-```
+![Scrubd pipeline architecture](./assets/qvac_architecture.jpg)
 
 ## HIPS / Vault
 
@@ -43,9 +32,9 @@ A predicted span is a **true positive** if it **overlaps** a gold span **and** s
 ## CLI
 
 ```bash
-scrubd <notes-dir> [--eval] [--stage2] [--out <dir>] [--labels <dir>] [--model <path>] [--passphrase <str>] [--no-medpsy]
-scrubd-gen <count> --out <dir>
-scrubd-relink <note> --out <file> [--vault <path>]
+npx scrubd <notes-dir> [--eval] [--stage2] [--out <dir>] [--labels <dir>] [--model <path>] [--passphrase <str>] [--no-medpsy]
+npx scrubd-gen <count> --out <dir>
+npx scrubd-relink <note> --out <file> [--vault <path>]
 npm run verify-offline
 ```
 
@@ -56,14 +45,17 @@ docker build -t scrubd .
 docker run --network none -v "$PWD/tmp/gold:/app/gold" scrubd /app/gold/notes --eval --stage2
 ```
 
-## Hardware proof (fill in on target device)
+## Hardware Proof
 
-| Metric | Value |
-| --- | --- |
-| Device | _TBD_ |
-| RAM | _TBD_ |
-| Model load time | _TBD_ |
-| Tokens/sec | _TBD_ (see runlog.csv) |
+| Metric | Value | Notes |
+| --- | --- | --- |
+| **Device** | Laptop (WSL2 on Windows) | `uname -a` |
+| **RAM** | **8 GB** (7.6 GiB total) | `free -h` |
+| **Model** | `medpsy-1.7b-q4_k_m-imat.gguf` | 1.2 GB file |
+| **Model load time** | **~7 seconds** (7356 ms) | From `runlog.csv` |
+| **Tokens/sec** | **~8.2 tokens/sec** | CPU only (see `runlog.csv`) |
+
+> **Note:** `runlog.csv` is included in the repository to provide auditable proof of offline performance on the target hardware.
 
 ## Borrowed libraries
 

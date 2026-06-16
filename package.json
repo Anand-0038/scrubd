@@ -14,15 +14,17 @@
     "scrubd-relink": "dist/scripts/relink.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "start": "node dist/src/cli.js",
+    "build": "node init && tsc -p tsconfig.json",
+    "start": "node init && node dist/src/cli.js",
     "gen-gold": "node dist/scripts/gen-gold.js",
     "verify-offline": "node dist/scripts/verify-offline.js",
     "test": "npm run build && node --test dist/test/*.test.js"
   },
   "dependencies": {
     "@faker-js/faker": "^9.6.0",
-    "@qvac/sdk": "^0.13.0"
+    "@qvac/sdk": "^0.13.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
